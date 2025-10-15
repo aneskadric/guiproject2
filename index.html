@@ -3,18 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Golfing Game</title>
-    <style>
-      body {
-        margin: 0;
-        overflow: hidden;
-      }
-      canvas {
-        display: block;
-      }
-    </style>
+    <title>Strategist Game</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
   </head>
   <body>
-    <script type="module" src="main.js"></script>
+    <a-scene>
+      <!-- Blue sky -->
+      <a-sky color="#87CEEB"></a-sky>
+
+      <!-- Green ground -->
+      <a-plane 
+        color="#228B22" 
+        rotation="-90 0 0" 
+        width="100" 
+        height="100">
+      </a-plane>
+
+      <!-- Camera -->
+      <a-entity position="0 1.6 4">
+        <a-camera></a-camera>
+      </a-entity>
+    </a-scene>
   </body>
 </html>
